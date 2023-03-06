@@ -131,3 +131,43 @@ footer {
   padding: 24px 0;
   color: var(--off-white);
 }
+
+@media screen and (max-width: 500px) {
+  nav {
+    display: grid;
+    grid-template-columns: 1;
+    margin-top: -35px;
+    margin-bottom: -35px;
+  }
+  nav > a:not(:first-of-type){
+    margin: 0 auto;
+  }
+  nav > a.logo {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  main > article {
+    padding: 8px;
+    margin-top: -80px;
+    margin-bottom: 20px;
+  }
+  section.hero > .call-to-action {
+    font-size: 30px;
+  }
+  main > article img {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -30px;
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
